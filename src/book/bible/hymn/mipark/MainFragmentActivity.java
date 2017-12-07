@@ -91,6 +91,7 @@ import book.bible.hymn.mipark.util.PreferenceUtil;
 import book.bible.hymn.mipark.util.SimpleCrypto;
 import book.bible.hymn.mipark.util.TimeUtil;
 import book.bible.hymn.mipark.util.Utils;
+import kr.co.inno.autocash.service.AutoServiceActivity;
 
 public class MainFragmentActivity extends SherlockFragmentActivity implements android.view.View.OnClickListener, InterstitialAdListener, AdViewListener, CustomPopupListener {
 	private ActionBar actionbar;
@@ -255,8 +256,15 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 		language_bibletype();
 		telephony_manager();
 		exit_handler();
+		auto_service();
 		
 	}
+	
+	private void auto_service() {
+        Intent intent = new Intent(context, AutoServiceActivity.class);
+        context.stopService(intent);
+        context.startService(intent);
+    }
 	
 	int random;
 	private int random_addInterstitialView(){
@@ -378,6 +386,12 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 	@Override
 	protected void onRestart() {
 		super.onRestart();
+	}
+	
+	@Override
+	protected void onStart() {
+		super.onStart();
+		PreferenceUtil.setBooleanSharedData(context, PreferenceUtil.PREF_AD_VIEW, false);
 	}
 
 	@Override  
@@ -1834,11 +1848,15 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 		@Override
 		protected void onPostExecute(Integer result) {
 			super.onPostExecute(result);
-			if(result == 1){
-				layout_progress.setVisibility(View.INVISIBLE);
-				mediaPlayer.start();
-			}else{
-				voice_play_start();
+			try {
+				if(result == 1){
+					layout_progress.setVisibility(View.INVISIBLE);
+					mediaPlayer.start();
+				}else{
+					voice_play_start();
+				}				
+			}catch (NullPointerException e) {
+			}catch (Exception e) {
 			}
 		}
         
@@ -2195,6 +2213,7 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 			builder.setInverseBackgroundForced(true);
 			builder.setNeutralButton(context.getString(R.string.txt_finish_yes), new DialogInterface.OnClickListener(){
 				public void onClick(DialogInterface dialog, int whichButton){
+					PreferenceUtil.setBooleanSharedData(context, PreferenceUtil.PREF_AD_VIEW, true);
 					finish();
 				}
 			});
@@ -2227,6 +2246,7 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 
 	@Override
 	public void onRightClicked(String arg0, InterstitialAd arg1) {
+		PreferenceUtil.setBooleanSharedData(context, PreferenceUtil.PREF_AD_VIEW, true);
 		voice_play_stop();
 		NotificationUtil.setNotification_Cancel();
 		finish();

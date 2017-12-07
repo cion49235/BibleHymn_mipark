@@ -45,6 +45,7 @@ public class PreferenceUtil {
 	
 	public final static String PREF_DO_RECORDING = "pref_do_recording";
 	public final static String PREF_NAME_RECORDING = "pref_name_recording";
+	public final static String PREF_AD_VIEW = "ad_view";
 	
 	//==============================================================================================//
 	//================================ 프리퍼런스 저장하고 불러오기 ================================//

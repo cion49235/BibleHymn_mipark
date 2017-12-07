@@ -67,7 +67,11 @@ public class Fragment_OldHymn extends Fragment implements OnClickListener, OnIte
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		edit_searcher.setText("");
+		try {
+			edit_searcher.setText("");
+		}catch (NullPointerException e) {
+		}catch (Exception e) {
+		}
 	}
 	
 	private void seacher_start(){
