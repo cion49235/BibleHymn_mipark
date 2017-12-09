@@ -2154,10 +2154,25 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 	
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if(keyCode == KeyEvent.KEYCODE_BACK){
-			addInterstitialView();
-			return true;
-		}
+		 if(keyCode == KeyEvent.KEYCODE_BACK){
+			 if(!flag){
+				 Toast.makeText(context, context.getString(R.string.txt_back) , Toast.LENGTH_LONG).show();
+				 flag = true;
+				 handler.sendEmptyMessageDelayed(0, 2000);
+				 return false;
+			 }else{
+				 handler.postDelayed(new Runnable() {
+					 @Override
+					 public void run() {
+						 PreferenceUtil.setBooleanSharedData(context, PreferenceUtil.PREF_AD_VIEW, true);
+						 voice_play_stop();
+						 NotificationUtil.setNotification_Cancel();
+						 finish();
+					 }
+				 },0);
+			 }
+			 return false;	 
+		 }
 		return super.onKeyDown(keyCode, event);
 	}
 	
