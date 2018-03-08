@@ -24,14 +24,16 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import book.bible.hymn.mipark.R;
-import book.bible.hymn.mipark.favorite.global.Global;
-import book.bible.hymn.mipark.favorite.page.ProfileActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
+import book.bible.hymn.mipark.favorite.global.Global;
+import book.bible.hymn.mipark.favorite.page.ProfileActivity;
+import book.bible.hymn.mipark.util.PreferenceUtil;
 
 public class main extends SherlockActivity implements AdViewListener {
 
@@ -49,7 +51,9 @@ public class main extends SherlockActivity implements AdViewListener {
         AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMIXER, "d298y2jj");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB, "ca-app-pub-4637651494513698/5298614013");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
-    	addBannerView();
+    	if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 //    	init_admob_naive();
         setList(context.getString(R.string.community), context.getString(R.string.community_subtitle), 309);
         setListAdapter();

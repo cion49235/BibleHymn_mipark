@@ -42,21 +42,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
-import android.view.ViewGroup.LayoutParams;
 import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
 import android.webkit.DownloadListener;
 import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
-import book.bible.hymn.mipark.R;
-import book.bible.hymn.mipark.favorite.GalleryView;
-import book.bible.hymn.mipark.favorite.connect.AsyncHttpTask;
-import book.bible.hymn.mipark.favorite.connect.ImageDownloader;
-import book.bible.hymn.mipark.favorite.global.Filedw;
-import book.bible.hymn.mipark.favorite.global.Global;
-import book.bible.hymn.mipark.favorite.global.Globalvariable;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,6 +60,15 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
+import book.bible.hymn.mipark.favorite.GalleryView;
+import book.bible.hymn.mipark.favorite.connect.AsyncHttpTask;
+import book.bible.hymn.mipark.favorite.connect.ImageDownloader;
+import book.bible.hymn.mipark.favorite.global.Filedw;
+import book.bible.hymn.mipark.favorite.global.Global;
+import book.bible.hymn.mipark.favorite.global.Globalvariable;
+import book.bible.hymn.mipark.util.PreferenceUtil;
 
 public class document_read extends SherlockActivity implements AdViewListener, InterstitialAdListener {
 
@@ -131,7 +133,9 @@ public class document_read extends SherlockActivity implements AdViewListener, I
 		show_alert = true;
 		ct = this;
     	
-		addBannerView();		
+		if(!PreferenceUtil.getStringSharedData(ct, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}		
 //    	init_admob_naive();
 		// Get Intent
 		Intent intent = getIntent();// 

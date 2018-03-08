@@ -48,14 +48,6 @@ import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import book.bible.hymn.mipark.R;
-import book.bible.hymn.mipark.dao.Activity_Data_Podcast_Sub;
-import book.bible.hymn.mipark.db.helper.DBOpenHelper;
-import book.bible.hymn.mipark.podcast.mediaplayer.ContinueMediaPlayer_Podcast;
-import book.bible.hymn.mipark.podcast.mediaplayer.CustomMediaPlayer_Podcast;
-import book.bible.hymn.mipark.util.NetworkHelper;
-import book.bible.hymn.mipark.util.PreferenceUtil;
-import book.bible.hymn.mipark.util.StringUtil;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -65,6 +57,15 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
+import book.bible.hymn.mipark.dao.Activity_Data_Podcast_Sub;
+import book.bible.hymn.mipark.db.helper.DBOpenHelper;
+import book.bible.hymn.mipark.podcast.mediaplayer.ContinueMediaPlayer_Podcast;
+import book.bible.hymn.mipark.podcast.mediaplayer.CustomMediaPlayer_Podcast;
+import book.bible.hymn.mipark.util.NetworkHelper;
+import book.bible.hymn.mipark.util.PreferenceUtil;
+import book.bible.hymn.mipark.util.StringUtil;
 
 public class PodcastActivity_Sub extends SherlockActivity implements OnClickListener,OnItemClickListener, OnScrollListener, AdViewListener {
 	public static Context context;
@@ -101,7 +102,9 @@ public class PodcastActivity_Sub extends SherlockActivity implements OnClickList
 		AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMIXER, "d298y2jj");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB, "ca-app-pub-4637651494513698/5298614013");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
-    	addBannerView();
+    	if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 //    	init_admob_naive();
 		retry_alert = true;
 		title = getIntent().getStringExtra("title");

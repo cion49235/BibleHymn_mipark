@@ -46,6 +46,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
+import book.bible.hymn.mipark.util.PreferenceUtil;
 import book.bible.hymn.mipark.util.StringUtil;
 import book.bible.hymn.mipark.util.TimeUtil;
 
@@ -626,8 +628,10 @@ public class CustomVideoPlayer_CCM extends SherlockActivity implements OnComplet
 				Toast.makeText(context, context.getString(R.string.frg_ccm_13), Toast.LENGTH_SHORT).show();
 				return false;
 			}else{
-				Toast.makeText(context, context.getString(R.string.txt_after_ad), Toast.LENGTH_SHORT).show();
-				addInterstitialView();
+				if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+					Toast.makeText(context, context.getString(R.string.txt_after_ad), Toast.LENGTH_SHORT).show();
+					addInterstitialView();					
+				}
 				handler.postDelayed(new Runnable() {
 					 @Override
 					 public void run() {

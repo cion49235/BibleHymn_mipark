@@ -31,9 +31,10 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
 import book.bible.hymn.mipark.util.Crypto;
+import book.bible.hymn.mipark.util.PreferenceUtil;
 import book.bible.hymn.mipark.util.Utils;
 
 public class DictionaryViewActivity extends SherlockActivity implements InterstitialAdListener, OnClickListener, AdViewListener {
@@ -56,7 +57,9 @@ public class DictionaryViewActivity extends SherlockActivity implements Intersti
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
 		retry_alert = true;
 //		init_admob_naive();
-		addBannerView();
+		if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 		set_titlebar();
 		display_list();
 	}

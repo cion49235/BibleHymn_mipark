@@ -30,10 +30,6 @@ import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import book.bible.hymn.mipark.R;
-import book.bible.hymn.mipark.dao.Fragment_Data_Podcast_Download;
-import book.bible.hymn.mipark.db.helper.DBOpenHelper;
-import book.bible.hymn.mipark.util.RoundedTransform;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -41,6 +37,12 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
+import book.bible.hymn.mipark.dao.Fragment_Data_Podcast_Download;
+import book.bible.hymn.mipark.db.helper.DBOpenHelper;
+import book.bible.hymn.mipark.util.PreferenceUtil;
+import book.bible.hymn.mipark.util.RoundedTransform;
 
 public class PodcastActivity_Download_Main extends SherlockActivity implements OnClickListener,OnItemClickListener, OnScrollListener, AdViewListener {
 	public static Context context;
@@ -62,7 +64,9 @@ public class PodcastActivity_Download_Main extends SherlockActivity implements O
 		AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMIXER, "d298y2jj");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB, "ca-app-pub-4637651494513698/5298614013");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
-    	addBannerView();
+    	if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 //    	init_admob_naive();
 		init_ui();
 		set_titlebar();

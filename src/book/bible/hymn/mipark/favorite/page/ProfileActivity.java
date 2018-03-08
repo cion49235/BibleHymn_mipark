@@ -37,15 +37,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup.LayoutParams;
 import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import book.bible.hymn.mipark.R;
-import book.bible.hymn.mipark.favorite.connect.AsyncHttpTask;
-import book.bible.hymn.mipark.favorite.connect.ImageDownloader;
-import book.bible.hymn.mipark.favorite.fadingactionbar.extras.actionbarsherlock.FadingActionBarHelper;
-import book.bible.hymn.mipark.favorite.global.Global;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.HeaderViewListAdapter;
@@ -53,6 +48,13 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
+import book.bible.hymn.mipark.favorite.connect.AsyncHttpTask;
+import book.bible.hymn.mipark.favorite.connect.ImageDownloader;
+import book.bible.hymn.mipark.favorite.fadingactionbar.extras.actionbarsherlock.FadingActionBarHelper;
+import book.bible.hymn.mipark.favorite.global.Global;
+import book.bible.hymn.mipark.util.PreferenceUtil;
 
 public class ProfileActivity extends SherlockActivity implements AdViewListener, OnClickListener{
 
@@ -229,7 +231,9 @@ public class ProfileActivity extends SherlockActivity implements AdViewListener,
 		bt_refresh = (Button)findViewById(R.id.bt_refresh);
 		bt_refresh.setOnClickListener(this);
 //    	init_admob_naive();
-		addBannerView();
+		if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 	}
 	
 	@Override

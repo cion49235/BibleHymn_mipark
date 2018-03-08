@@ -28,7 +28,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.common.Const;
 import book.bible.hymn.mipark.db.helper.DBOpenHelper;
+import book.bible.hymn.mipark.util.PreferenceUtil;
 
 
 public class Fragment_Note_Writer extends SherlockActivity implements OnClickListener, AdViewListener {
@@ -51,7 +53,9 @@ public class Fragment_Note_Writer extends SherlockActivity implements OnClickLis
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB, "ca-app-pub-4637651494513698/5298614013");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
 		context = this;
-		addBannerView();
+		if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 //		init_admob_naive();
 		get_intent_data();
 		init_ui();

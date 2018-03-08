@@ -134,7 +134,9 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB, "ca-app-pub-4637651494513698/5298614013");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
     	ad_layout = (RelativeLayout)findViewById(R.id.ad_layout);
-    	addBannerView();
+    	if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 //    	init_admob_naive();
         CustomPopup.setCustomPopupListener(this);
         CustomPopup.startCustomPopup(this, "d298y2jj");
@@ -256,14 +258,22 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 		language_bibletype();
 		telephony_manager();
 		exit_handler();
-		auto_service();
-		
+		if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+			auto_service();			
+		}else{
+			auto_service_stop();
+		}
 	}
 	
 	private void auto_service() {
         Intent intent = new Intent(context, AutoServiceActivity.class);
         context.stopService(intent);
         context.startService(intent);
+    }
+	
+	private void auto_service_stop() {
+        Intent intent = new Intent(context, AutoServiceActivity.class);
+        context.stopService(intent);
     }
 	
 	int random;
@@ -432,10 +442,14 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 			intent_question_webview();
 			return true;
 		case 2:
-			action_background = false;
-			addInterstitialView_Basic();
-			Toast.makeText(context, context.getString(R.string.toast_ad), Toast.LENGTH_LONG).show();
-			return true;
+			if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+				action_background = false;
+				addInterstitialView_Basic();
+				Toast.makeText(context, context.getString(R.string.toast_ad), Toast.LENGTH_LONG).show();
+				return true;		
+			}else {
+				return true;
+			}
 		case 3:
 			intent_app_share();
 			return true;
@@ -561,9 +575,13 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 			}
 		}else if(view == bt_voice_background){
 			if(mediaPlayer != null && mediaPlayer.isPlaying() ){
-				action_background = true;
-				Toast.makeText(context, context.getString(R.string.txt_background_voice_play), Toast.LENGTH_LONG).show();
-				addInterstitialView_Basic();
+				if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+					action_background = true;
+					Toast.makeText(context, context.getString(R.string.txt_background_voice_play), Toast.LENGTH_LONG).show();
+					addInterstitialView_Basic();					
+				}else {
+					home_action();
+				}
 			}else{
 				return;
 			}

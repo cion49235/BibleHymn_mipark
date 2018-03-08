@@ -2342,11 +2342,11 @@ Activity_Search
         public static final int add=0x7f0b0311;
         public static final int add_favorite=0x7f0b02d9;
         public static final int added=0x7f0b0313;
-        public static final int agree=0x7f0b035e;
+        public static final int agree=0x7f0b0362;
         public static final int alert_msg_swipe=0x7f0b0044;
         public static final int alert_record_no=0x7f0b0356;
         public static final int alert_record_yes=0x7f0b0355;
-        public static final int app_id=0x7f0b03cd;
+        public static final int app_id=0x7f0b03d1;
         public static final int app_info=0x7f0b029e;
         /** 탭메뉴 
 찬송가 
@@ -2371,24 +2371,24 @@ Activity_Search
         public static final int attach_recording=0x7f0b0331;
         /**  activity_advert_auto.xml 
          */
-        public static final int auto_text1_hint=0x7f0b03ca;
-        public static final int auto_text2_hint=0x7f0b03cb;
+        public static final int auto_text1_hint=0x7f0b03ce;
+        public static final int auto_text2_hint=0x7f0b03cf;
         public static final int birthday=0x7f0b02cf;
         public static final int birthday_des=0x7f0b02d0;
         public static final int blank_error=0x7f0b02ec;
         public static final int bt_refresh=0x7f0b0357;
         public static final int build=0x7f0b0294;
         public static final int camera=0x7f0b02fe;
-        public static final int cancel=0x7f0b035f;
+        public static final int cancel=0x7f0b0363;
         public static final int cancel_writing_des=0x7f0b0329;
         /**  activity_advert_category.xml 
          */
-        public static final int category_name_text1=0x7f0b03aa;
-        public static final int category_name_text2=0x7f0b03ab;
-        public static final int category_name_text3=0x7f0b03ac;
-        public static final int category_name_text4=0x7f0b03ad;
-        public static final int category_name_text5=0x7f0b03ae;
-        public static final int category_name_text6=0x7f0b03af;
+        public static final int category_name_text1=0x7f0b03ae;
+        public static final int category_name_text2=0x7f0b03af;
+        public static final int category_name_text3=0x7f0b03b0;
+        public static final int category_name_text4=0x7f0b03b1;
+        public static final int category_name_text5=0x7f0b03b2;
+        public static final int category_name_text6=0x7f0b03b3;
         public static final int changed=0x7f0b0319;
         public static final int check_how_many_people_are_favorite_me=0x7f0b02df;
         public static final int check_result=0x7f0b02db;
@@ -2399,13 +2399,13 @@ Activity_Search
         public static final int check_with_twitter=0x7f0b02e7;
         public static final int choose_email_app=0x7f0b0301;
         public static final int choose_picture=0x7f0b02fd;
-        public static final int close_window=0x7f0b0361;
+        public static final int close_window=0x7f0b0365;
         public static final int community=0x7f0b02a7;
         public static final int community_subtitle=0x7f0b02a8;
         public static final int completed=0x7f0b032b;
-        public static final int confirm=0x7f0b035d;
+        public static final int confirm=0x7f0b0361;
         public static final int contact=0x7f0b02ab;
-        public static final int contact_pick_error=0x7f0b03d6;
+        public static final int contact_pick_error=0x7f0b03da;
         public static final int contact_pick_error_=0x7f0b02eb;
         public static final int copy=0x7f0b030d;
         public static final int copyright=0x7f0b0297;
@@ -2433,7 +2433,7 @@ Activity_Search
         public static final int downloading_ment=0x7f0b0107;
         public static final int drawer_close=0x7f0b02e1;
         public static final int drawer_open=0x7f0b02e0;
-        public static final int during_logout=0x7f0b03d5;
+        public static final int during_logout=0x7f0b03d9;
         public static final int edit_profile=0x7f0b0317;
         public static final int enquire=0x7f0b0300;
         public static final int error=0x7f0b02be;
@@ -2564,57 +2564,57 @@ Fragment_Podcast
         public static final int intent_app_share=0x7f0b0046;
         public static final int ip_error_des=0x7f0b0315;
         public static final int join=0x7f0b02c9;
-        public static final int join_complete_sub=0x7f0b0376;
-        public static final int join_complete_title=0x7f0b0375;
-        public static final int join_guide_title=0x7f0b0370;
+        public static final int join_complete_sub=0x7f0b037a;
+        public static final int join_complete_title=0x7f0b0379;
+        public static final int join_guide_title=0x7f0b0374;
         /**  activity_join.xml 
          */
-        public static final int join_id_hint=0x7f0b0371;
-        public static final int join_man_text=0x7f0b0373;
-        public static final int join_pwd_hint=0x7f0b0372;
-        public static final int join_woman_text=0x7f0b0374;
+        public static final int join_id_hint=0x7f0b0375;
+        public static final int join_man_text=0x7f0b0377;
+        public static final int join_pwd_hint=0x7f0b0376;
+        public static final int join_woman_text=0x7f0b0378;
         /** <string name="kakao_app_key">d68748038a3e38f7d268d418845331ed</string>
          */
-        public static final int kakao_scheme=0x7f0b03ce;
-        public static final int kakaolink_host=0x7f0b03cf;
+        public static final int kakao_scheme=0x7f0b03d2;
+        public static final int kakaolink_host=0x7f0b03d3;
         public static final int lang=0x7f0b0298;
         public static final int loading=0x7f0b0328;
         public static final int location=0x7f0b02d1;
         public static final int location_des=0x7f0b02d2;
-        public static final int login_google_text=0x7f0b036b;
-        public static final int login_id_hint=0x7f0b036c;
+        public static final int login_google_text=0x7f0b036f;
+        public static final int login_id_hint=0x7f0b0370;
         /**  activity_login.xml 
          */
-        public static final int login_id_text=0x7f0b0369;
-        public static final int login_pwd_hint=0x7f0b036d;
-        public static final int login_pwd_text=0x7f0b036a;
+        public static final int login_id_text=0x7f0b036d;
+        public static final int login_pwd_hint=0x7f0b0371;
+        public static final int login_pwd_text=0x7f0b036e;
         public static final int logout=0x7f0b02af;
-        public static final int logout_des=0x7f0b03d3;
-        public static final int logout_really=0x7f0b03d4;
-        public static final int lostpwd_button=0x7f0b038b;
-        public static final int lostpwd_complete=0x7f0b038c;
-        public static final int main_privacy_text=0x7f0b0363;
+        public static final int logout_des=0x7f0b03d7;
+        public static final int logout_really=0x7f0b03d8;
+        public static final int lostpwd_button=0x7f0b038f;
+        public static final int lostpwd_complete=0x7f0b0390;
+        public static final int main_privacy_text=0x7f0b0367;
         /**  activity_main.xml 
          */
-        public static final int main_service_text=0x7f0b0362;
-        public static final int main_view_text=0x7f0b0364;
+        public static final int main_service_text=0x7f0b0366;
+        public static final int main_view_text=0x7f0b0368;
         public static final int male=0x7f0b02ef;
-        public static final int mb_name_hint=0x7f0b03c6;
+        public static final int mb_name_hint=0x7f0b03ca;
         public static final int member_info_error_des=0x7f0b0306;
         public static final int menu_settings=0x7f0b029d;
         public static final int message=0x7f0b02d8;
-        public static final int modify_complete_sub=0x7f0b0382;
+        public static final int modify_complete_sub=0x7f0b0386;
         /**  activity_member_modify.xml 
          */
-        public static final int modify_complete_title=0x7f0b0381;
-        public static final int modify_guide_title=0x7f0b0383;
+        public static final int modify_complete_title=0x7f0b0385;
+        public static final int modify_guide_title=0x7f0b0387;
         public static final int moreview=0x7f0b02a9;
         public static final int my_favorite_people=0x7f0b02e2;
         public static final int my_favorites=0x7f0b031a;
         public static final int name=0x7f0b02c0;
         public static final int name_1=0x7f0b02cb;
         public static final int name_2=0x7f0b02cc;
-        public static final int network_error=0x7f0b035c;
+        public static final int network_error=0x7f0b0360;
         public static final int networkerror=0x7f0b02a4;
         public static final int networkerrord=0x7f0b02a5;
         public static final int no=0x7f0b02a0;
@@ -2652,7 +2652,7 @@ Fragment_Podcast
         public static final int phone_number_des=0x7f0b02cd;
         public static final int photo=0x7f0b031c;
         public static final int pic_size_devide=0x7f0b0295;
-        public static final int plan=0x7f0b03d1;
+        public static final int plan=0x7f0b03d5;
         public static final int play_prompt=0x7f0b0352;
         /**  Privacy 
  Privacy 
@@ -2681,9 +2681,9 @@ Fragment_Podcast
         public static final int pull_to_refresh_release_label=0x7f0b000e;
         /**  공통 
          */
-        public static final int push_agree=0x7f0b035b;
-        public static final int re_bankname_hint=0x7f0b03c4;
-        public static final int re_banknumber_hint=0x7f0b03c5;
+        public static final int push_agree=0x7f0b035f;
+        public static final int re_bankname_hint=0x7f0b03c8;
+        public static final int re_banknumber_hint=0x7f0b03c9;
         public static final int record_in_progress=0x7f0b0350;
         public static final int record_prompt=0x7f0b0351;
         public static final int refresh=0x7f0b02a6;
@@ -2691,7 +2691,7 @@ Fragment_Podcast
         public static final int register_favorite=0x7f0b02da;
         public static final int registering=0x7f0b02c2;
         public static final int request=0x7f0b02ac;
-        public static final int reset=0x7f0b0360;
+        public static final int reset=0x7f0b0364;
         public static final int right_now=0x7f0b031f;
         public static final int rotate=0x7f0b02f2;
         public static final int saved=0x7f0b02ae;
@@ -2700,52 +2700,52 @@ Fragment_Podcast
         public static final int see_previous_comments=0x7f0b030c;
         public static final int send_feedback=0x7f0b02f4;
         public static final int send_feedback_des=0x7f0b02f5;
-        public static final int server_client_ID=0x7f0b03d0;
+        public static final int server_client_ID=0x7f0b03d4;
         public static final int server_connection_error_des=0x7f0b02ed;
         public static final int server_path=0x7f0b029a;
         public static final int setting=0x7f0b02a3;
-        public static final int setting_advert_push_text=0x7f0b0396;
+        public static final int setting_advert_push_text=0x7f0b039a;
         /**  activity_setting.xml 
          */
-        public static final int setting_auto_text=0x7f0b0392;
-        public static final int setting_company_text=0x7f0b039f;
-        public static final int setting_facebook_confirm_text=0x7f0b03a4;
-        public static final int setting_faq_text=0x7f0b039d;
-        public static final int setting_google_confirm_text=0x7f0b03a2;
-        public static final int setting_google_logout_text=0x7f0b03a3;
-        public static final int setting_google_re_text=0x7f0b03a1;
-        public static final int setting_hp_modify_text=0x7f0b0398;
-        public static final int setting_leave_text=0x7f0b03a0;
-        public static final int setting_member_modify_text=0x7f0b0399;
-        public static final int setting_notice_push_text=0x7f0b0397;
-        public static final int setting_notice_text=0x7f0b039a;
-        public static final int setting_one_text=0x7f0b039e;
-        public static final int setting_point_push_text=0x7f0b0395;
-        public static final int setting_privacy_text=0x7f0b039c;
-        public static final int setting_service_text=0x7f0b039b;
-        public static final int setting_time_text=0x7f0b0394;
-        public static final int setting_wifi_text=0x7f0b0393;
+        public static final int setting_auto_text=0x7f0b0396;
+        public static final int setting_company_text=0x7f0b03a3;
+        public static final int setting_facebook_confirm_text=0x7f0b03a8;
+        public static final int setting_faq_text=0x7f0b03a1;
+        public static final int setting_google_confirm_text=0x7f0b03a6;
+        public static final int setting_google_logout_text=0x7f0b03a7;
+        public static final int setting_google_re_text=0x7f0b03a5;
+        public static final int setting_hp_modify_text=0x7f0b039c;
+        public static final int setting_leave_text=0x7f0b03a4;
+        public static final int setting_member_modify_text=0x7f0b039d;
+        public static final int setting_notice_push_text=0x7f0b039b;
+        public static final int setting_notice_text=0x7f0b039e;
+        public static final int setting_one_text=0x7f0b03a2;
+        public static final int setting_point_push_text=0x7f0b0399;
+        public static final int setting_privacy_text=0x7f0b03a0;
+        public static final int setting_service_text=0x7f0b039f;
+        public static final int setting_time_text=0x7f0b0398;
+        public static final int setting_wifi_text=0x7f0b0397;
         public static final int share=0x7f0b02b2;
-        public static final int shop_buy_auth_complete_sub=0x7f0b03bb;
-        public static final int shop_buy_auth_guide_title=0x7f0b03bc;
-        public static final int shop_buy_complete_sub=0x7f0b03b9;
-        public static final int shop_buy_complete_title=0x7f0b03b8;
-        public static final int shop_buy_guide_title=0x7f0b03ba;
-        public static final int shop_cancel_complete=0x7f0b03b4;
-        public static final int shop_refund_complete_sub=0x7f0b03c2;
-        public static final int shop_refund_complete_title=0x7f0b03c1;
-        public static final int shop_refund_guide_title=0x7f0b03c3;
+        public static final int shop_buy_auth_complete_sub=0x7f0b03bf;
+        public static final int shop_buy_auth_guide_title=0x7f0b03c0;
+        public static final int shop_buy_complete_sub=0x7f0b03bd;
+        public static final int shop_buy_complete_title=0x7f0b03bc;
+        public static final int shop_buy_guide_title=0x7f0b03be;
+        public static final int shop_cancel_complete=0x7f0b03b8;
+        public static final int shop_refund_complete_sub=0x7f0b03c6;
+        public static final int shop_refund_complete_title=0x7f0b03c5;
+        public static final int shop_refund_guide_title=0x7f0b03c7;
         /**  activity_shop.xml 
          */
-        public static final int shop_search_hint=0x7f0b03b0;
+        public static final int shop_search_hint=0x7f0b03b4;
         public static final int sign_in=0x7f0b0316;
         public static final int sign_up=0x7f0b02ad;
         /**  activity_login.xml 
          */
-        public static final int signed_in_fmt=0x7f0b03a9;
+        public static final int signed_in_fmt=0x7f0b03ad;
         public static final int signing_in=0x7f0b02bb;
         public static final int skip=0x7f0b02c8;
-        public static final int special_user=0x7f0b03d2;
+        public static final int special_user=0x7f0b03d6;
         public static final int start=0x7f0b02b5;
         public static final int start_downloading=0x7f0b0327;
         /** 인트로 
@@ -2767,78 +2767,78 @@ Fragment_Podcast
         public static final int tarks_account=0x7f0b02b6;
         public static final int tarks_account_des=0x7f0b02b7;
         public static final int test_result=0x7f0b02dc;
-        public static final int text_agreement=0x7f0b0386;
-        public static final int text_privacy=0x7f0b0387;
+        public static final int text_agreement=0x7f0b038a;
+        public static final int text_privacy=0x7f0b038b;
         /**  activity_agreement.xml 
          */
-        public static final int title_agreement=0x7f0b0384;
-        public static final int title_privacy=0x7f0b0385;
+        public static final int title_agreement=0x7f0b0388;
+        public static final int title_privacy=0x7f0b0389;
         public static final int toast_ad=0x7f0b0048;
-        public static final int toast_agree_check=0x7f0b0388;
+        public static final int toast_agree_check=0x7f0b038c;
         public static final int toast_bookmark_off=0x7f0b035a;
         public static final int toast_bookmark_on=0x7f0b0359;
         public static final int toast_media_volume=0x7f0b0354;
         /**  activity_coupon_detail.xml 
          */
-        public static final int toast_msg_cancel=0x7f0b03b3;
+        public static final int toast_msg_cancel=0x7f0b03b7;
         /**  activity_company.xml 
          */
-        public static final int toast_msg_company_result=0x7f0b03c9;
+        public static final int toast_msg_company_result=0x7f0b03cd;
         /**  activity_devicelayout.xml 
          */
-        public static final int toast_msg_device_error=0x7f0b03cc;
-        public static final int toast_msg_facebook_success=0x7f0b03a8;
-        public static final int toast_msg_google_fail=0x7f0b03a7;
-        public static final int toast_msg_google_logout=0x7f0b03a6;
-        public static final int toast_msg_google_success=0x7f0b03a5;
-        public static final int toast_msg_join_auth_mb_hp=0x7f0b03b7;
-        public static final int toast_msg_join_mb_auth=0x7f0b03b6;
-        public static final int toast_msg_join_mb_birth=0x7f0b037b;
-        public static final int toast_msg_join_mb_hp=0x7f0b037c;
-        public static final int toast_msg_join_mb_id=0x7f0b0377;
-        public static final int toast_msg_join_mb_nick=0x7f0b037a;
-        public static final int toast_msg_join_mb_nick_enabled=0x7f0b037d;
+        public static final int toast_msg_device_error=0x7f0b03d0;
+        public static final int toast_msg_facebook_success=0x7f0b03ac;
+        public static final int toast_msg_google_fail=0x7f0b03ab;
+        public static final int toast_msg_google_logout=0x7f0b03aa;
+        public static final int toast_msg_google_success=0x7f0b03a9;
+        public static final int toast_msg_join_auth_mb_hp=0x7f0b03bb;
+        public static final int toast_msg_join_mb_auth=0x7f0b03ba;
+        public static final int toast_msg_join_mb_birth=0x7f0b037f;
+        public static final int toast_msg_join_mb_hp=0x7f0b0380;
+        public static final int toast_msg_join_mb_id=0x7f0b037b;
+        public static final int toast_msg_join_mb_nick=0x7f0b037e;
+        public static final int toast_msg_join_mb_nick_enabled=0x7f0b0381;
         /**  activity_shop_buy.xml 
          */
-        public static final int toast_msg_join_mb_password=0x7f0b03b5;
-        public static final int toast_msg_join_mb_privacy=0x7f0b0380;
-        public static final int toast_msg_join_mb_pwd=0x7f0b0378;
-        public static final int toast_msg_join_mb_pwd_enabled=0x7f0b037e;
-        public static final int toast_msg_join_mb_pwd_re=0x7f0b0379;
-        public static final int toast_msg_join_mb_recommend=0x7f0b037f;
-        public static final int toast_msg_join_privacy=0x7f0b0368;
-        public static final int toast_msg_join_service=0x7f0b0367;
-        public static final int toast_msg_login_privacy=0x7f0b0366;
-        public static final int toast_msg_login_service=0x7f0b0365;
-        public static final int toast_msg_mb_id=0x7f0b036e;
-        public static final int toast_msg_mb_pwd=0x7f0b036f;
+        public static final int toast_msg_join_mb_password=0x7f0b03b9;
+        public static final int toast_msg_join_mb_privacy=0x7f0b0384;
+        public static final int toast_msg_join_mb_pwd=0x7f0b037c;
+        public static final int toast_msg_join_mb_pwd_enabled=0x7f0b0382;
+        public static final int toast_msg_join_mb_pwd_re=0x7f0b037d;
+        public static final int toast_msg_join_mb_recommend=0x7f0b0383;
+        public static final int toast_msg_join_privacy=0x7f0b036c;
+        public static final int toast_msg_join_service=0x7f0b036b;
+        public static final int toast_msg_login_privacy=0x7f0b036a;
+        public static final int toast_msg_login_service=0x7f0b0369;
+        public static final int toast_msg_mb_id=0x7f0b0372;
+        public static final int toast_msg_mb_pwd=0x7f0b0373;
         /**  activity_one.xml 
          */
-        public static final int toast_msg_one_result=0x7f0b03c8;
-        public static final int toast_msg_password_mb_hp=0x7f0b038a;
+        public static final int toast_msg_one_result=0x7f0b03cc;
+        public static final int toast_msg_password_mb_hp=0x7f0b038e;
         /**  activity_password.xml 
          */
-        public static final int toast_msg_password_mb_id=0x7f0b0389;
+        public static final int toast_msg_password_mb_id=0x7f0b038d;
         /**  activity_member_password.xml 
          */
-        public static final int toast_msg_password_mb_password1=0x7f0b038d;
-        public static final int toast_msg_password_mb_password2=0x7f0b038e;
-        public static final int toast_msg_password_mb_password3=0x7f0b038f;
-        public static final int toast_msg_password_mb_password4=0x7f0b0390;
-        public static final int toast_msg_password_mb_password5=0x7f0b0391;
+        public static final int toast_msg_password_mb_password1=0x7f0b0391;
+        public static final int toast_msg_password_mb_password2=0x7f0b0392;
+        public static final int toast_msg_password_mb_password3=0x7f0b0393;
+        public static final int toast_msg_password_mb_password4=0x7f0b0394;
+        public static final int toast_msg_password_mb_password5=0x7f0b0395;
         /**  activity_recommend_webview.xml 
          */
-        public static final int toast_msg_recommend_success=0x7f0b03c7;
-        public static final int toast_msg_refund_mb_name=0x7f0b03c0;
-        public static final int toast_msg_refund_re_bankname=0x7f0b03be;
-        public static final int toast_msg_refund_re_banknumber=0x7f0b03bf;
+        public static final int toast_msg_recommend_success=0x7f0b03cb;
+        public static final int toast_msg_refund_mb_name=0x7f0b03c4;
+        public static final int toast_msg_refund_re_bankname=0x7f0b03c2;
+        public static final int toast_msg_refund_re_banknumber=0x7f0b03c3;
         /**  activity_shop_refund.xml 
          */
-        public static final int toast_msg_refund_remain_point=0x7f0b03bd;
+        public static final int toast_msg_refund_remain_point=0x7f0b03c1;
         /**  activity_shop_detail.xml 
          */
-        public static final int toast_msg_shop_detail_nopoint=0x7f0b03b2;
-        public static final int toast_msg_shop_stx=0x7f0b03b1;
+        public static final int toast_msg_shop_detail_nopoint=0x7f0b03b6;
+        public static final int toast_msg_shop_stx=0x7f0b03b5;
         public static final int toast_msg_swipe=0x7f0b0045;
         public static final int toast_recording_finish=0x7f0b034f;
         public static final int toast_recording_start=0x7f0b0353;
@@ -2935,6 +2935,10 @@ Fragment_Podcast
         public static final int txt_hymnlyrics_url_old=0x7f0b002d;
         public static final int txt_hymnsong_url_new=0x7f0b002c;
         public static final int txt_hymnsong_url_old=0x7f0b002b;
+        public static final int txt_inapp_alert_ment=0x7f0b035b;
+        public static final int txt_inapp_alert_no=0x7f0b035e;
+        public static final int txt_inapp_alert_title=0x7f0b035c;
+        public static final int txt_inapp_alert_yes=0x7f0b035d;
         public static final int txt_indianhindi_path=0x7f0b009a;
         public static final int txt_indiantamil_path=0x7f0b009b;
         public static final int txt_indonesianbaru_path=0x7f0b008a;

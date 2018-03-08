@@ -34,13 +34,6 @@ import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import book.bible.hymn.mipark.R;
-import book.bible.hymn.mipark.ccm.player.ContinueMediaPlayer_CCM;
-import book.bible.hymn.mipark.ccm.player.CustomVideoPlayer_CCM;
-import book.bible.hymn.mipark.dao.Activity_Data_CCM_Favorite;
-import book.bible.hymn.mipark.db.helper.DBOpenHelper;
-import book.bible.hymn.mipark.util.AlertUtil;
-import book.bible.hymn.mipark.util.RoundedTransform;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -50,6 +43,14 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import book.bible.hymn.mipark.R;
+import book.bible.hymn.mipark.ccm.player.ContinueMediaPlayer_CCM;
+import book.bible.hymn.mipark.ccm.player.CustomVideoPlayer_CCM;
+import book.bible.hymn.mipark.common.Const;
+import book.bible.hymn.mipark.dao.Activity_Data_CCM_Favorite;
+import book.bible.hymn.mipark.db.helper.DBOpenHelper;
+import book.bible.hymn.mipark.util.PreferenceUtil;
+import book.bible.hymn.mipark.util.RoundedTransform;
 
 public class CCM_Activity_Favorite extends SherlockActivity implements OnClickListener,OnItemClickListener, OnScrollListener, AdViewListener {
 	public static Context context;
@@ -72,7 +73,9 @@ public class CCM_Activity_Favorite extends SherlockActivity implements OnClickLi
 		AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMIXER, "d298y2jj");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB, "ca-app-pub-4637651494513698/5298614013");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
-    	addBannerView();
+    	if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+        	addBannerView();    		
+    	}
 //    	init_admob_naive();
 		init_ui();
 		set_titlebar();
