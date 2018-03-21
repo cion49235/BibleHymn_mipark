@@ -346,7 +346,7 @@ public class HymnViewActivity extends Activity implements AdViewListener, OnClic
 			if(PreferenceUtil.getBooleanSharedData(context, PreferenceUtil.PREF_HYMN_CONTINUE, Const.hymn_continue) == true){
 				action_background = false;
 				if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
-					addInterstitialView();	
+//					addInterstitialView();	
 				}
 				handler.postDelayed(new Runnable() {
 					@Override
