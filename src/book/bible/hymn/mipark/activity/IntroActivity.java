@@ -433,7 +433,7 @@ public class IntroActivity extends Activity{
     Runnable runnable = new Runnable() {
 		@Override
 		public void run() {
-			if(PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")) {
+			/*if(PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")) {
 				Intent intent = new Intent(context, MainFragmentActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				startActivity(intent);
@@ -442,7 +442,11 @@ public class IntroActivity extends Activity{
 				overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 			}else {
 				show_inapp_alert();	
-			}
+			}*/
+			Intent intent = new Intent(context, MainFragmentActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
+			finish();
 		}
 	};
 	@Override
