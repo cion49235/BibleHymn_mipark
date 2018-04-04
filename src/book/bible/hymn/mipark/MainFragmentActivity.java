@@ -134,9 +134,9 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB, "ca-app-pub-4637651494513698/5298614013");
     	AdMixerManager.getInstance().setAdapterDefaultAppCode(AdAdapter.ADAPTER_ADMOB_FULL, "ca-app-pub-4637651494513698/2289307299");
     	ad_layout = (RelativeLayout)findViewById(R.id.ad_layout);
-    	/*if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+    	if(!PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
         	addBannerView();    		
-    	}*/
+    	}
 //    	init_admob_naive();
         CustomPopup.setCustomPopupListener(this);
         CustomPopup.startCustomPopup(this, "d298y2jj");
