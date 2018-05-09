@@ -133,9 +133,9 @@ public class document_read extends SherlockActivity implements AdViewListener, I
 		show_alert = true;
 		ct = this;
     	
-		if(!PreferenceUtil.getStringSharedData(ct, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
+		/*if(!PreferenceUtil.getStringSharedData(ct, PreferenceUtil.PREF_ISSUBSCRIBED, Const.isSubscribed).equals("true")){
         	addBannerView();    		
-    	}		
+    	}		*/
 //    	init_admob_naive();
 		// Get Intent
 		Intent intent = getIntent();// 
