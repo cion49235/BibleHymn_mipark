@@ -105,7 +105,7 @@ public class DictionaryViewActivity extends SherlockActivity implements Intersti
 		webview.setWebViewClient(new WebViewClientClass());		
 		webview.setWebChromeClient(new WebChromeClientClass());
 		try {
-			webview.loadUrl(Crypto.decrypt(Utils.data, context.getString(R.string.frg_dicitonary_01)) + get_name);
+			webview.loadUrl(context.getString(R.string.url_detail_dictionary) + get_name);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

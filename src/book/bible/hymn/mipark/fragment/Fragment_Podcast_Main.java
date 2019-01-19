@@ -185,7 +185,7 @@ public class Fragment_Podcast_Main extends Fragment implements OnClickListener, 
 			protected String doInBackground(String... params) {
 				String sTag;
 				try{
-				   String data = Crypto.decrypt(Utils.data, getActivity().getString(R.string.frg_podcast_01));
+				   String data = getActivity().getString(R.string.url_detail_podcast);
 		           String str = data+i+".php?view="+view_num;
 //		           Log.i("dsu", "str : " + str);
 		           HttpURLConnection localHttpURLConnection = (HttpURLConnection)new URL(str).openConnection();
@@ -273,9 +273,6 @@ public class Fragment_Podcast_Main extends Fragment implements OnClickListener, 
 		         catch (NullPointerException NullPointerException)
 		         {
 		         }
-				 catch (JSONException e) 
-				 {
-				 } 
 				 catch (Exception e) 
 				 {
 				 }

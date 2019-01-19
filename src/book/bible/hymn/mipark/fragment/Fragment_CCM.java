@@ -180,7 +180,7 @@ public class Fragment_CCM extends Fragment implements OnClickListener, OnItemCli
 			protected String doInBackground(String... params) {
 				String sTag;
 				try{
-				   String data = Crypto.decrypt(Utils.data, getActivity().getString(R.string.frg_ccm_02));
+				   String data = getActivity().getString(R.string.url_detail_ccm);
 		           String str = data+i+".php?view="+view_num;
 //		           Log.i("dsu", "str : " + str);
 		           HttpURLConnection localHttpURLConnection = (HttpURLConnection)new URL(str).openConnection();
@@ -253,9 +253,6 @@ public class Fragment_CCM extends Fragment implements OnClickListener, OnItemCli
 		         catch (NullPointerException NullPointerException)
 		         {
 		         }
-				 catch (JSONException e) 
-				 {
-				 } 
 				 catch (Exception e) 
 				 {
 				 }

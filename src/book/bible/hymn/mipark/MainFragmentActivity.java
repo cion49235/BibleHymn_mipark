@@ -1351,203 +1351,203 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 				file_name = context.getString(R.string.txt_input_jpnnew);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_jpnnew);
 				input_db_path = context.getString(R.string.txt_jpnnew_path);
 			}else if(which == 4){//ckb.db
 				file_name = context.getString(R.string.txt_input_ckb);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_ckb);
 				input_db_path = context.getString(R.string.txt_ckb_path);
 			}else if(which == 5){//frenchdarby.db
 				file_name = context.getString(R.string.txt_input_frenchdarby);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_frenchdarby);
 				input_db_path = context.getString(R.string.txt_frenchdarby_path);
 			}else if(which == 6){//germanluther.db
 				file_name = context.getString(R.string.txt_input_germanluther);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_germanluther);
 				input_db_path = context.getString(R.string.txt_germanluther_path);
 			}else if(which == 7){//gst.db
 				file_name = context.getString(R.string.txt_input_gst);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_gst);
 				input_db_path = context.getString(R.string.txt_gst_path);
 			}else if(which == 8){//indonesianbaru.db
 				file_name = context.getString(R.string.txt_input_indonesianbaru);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_indonesianbaru);
 				input_db_path = context.getString(R.string.txt_indonesianbaru_path);
 			}else if(which == 9){//portugal.db
 				file_name = context.getString(R.string.txt_input_portugal);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_portugal);
 				input_db_path = context.getString(R.string.txt_portugal_path);
 			}else if(which == 10){//russiansynodal.db
 				file_name = context.getString(R.string.txt_input_russiansynodal);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_russiansynodal);
 				input_db_path = context.getString(R.string.txt_russiansynodal_path);
 			}else if(which == 11){
 				file_name = context.getString(R.string.txt_input_alb);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_alb);
 				input_db_path = context.getString(R.string.txt_alb_path);
 			}else if(which == 12){
 				file_name = context.getString(R.string.txt_input_asv);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_asv);
 				input_db_path = context.getString(R.string.txt_asv_path);
 			}else if(which == 13){
 				file_name = context.getString(R.string.txt_input_avs);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_avs);
 				input_db_path = context.getString(R.string.txt_avs_path);
 			}else if(which == 14){
 				file_name = context.getString(R.string.txt_input_barun);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_barun);
 				input_db_path = context.getString(R.string.txt_barun_path);
 			}else if(which == 15){
 				file_name = context.getString(R.string.txt_input_chb);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_chb);
 				input_db_path = context.getString(R.string.txt_chb_path);
 			}else if(which == 15){
 				file_name = context.getString(R.string.txt_input_chb);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_chb);
 				input_db_path = context.getString(R.string.txt_chb_path);
 			}else if(which == 16){
 				file_name = context.getString(R.string.txt_input_chg);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_chg);
 				input_db_path = context.getString(R.string.txt_chg_path);
 			}else if(which == 17){
 				file_name = context.getString(R.string.txt_input_cjb);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_cjb);
 				input_db_path = context.getString(R.string.txt_cjb_path);
 			}else if(which == 18){
 				file_name = context.getString(R.string.txt_input_ckc);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_ckc);
 				input_db_path = context.getString(R.string.txt_ckc_path);
 			}else if(which == 19){
 				file_name = context.getString(R.string.txt_input_ckg);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_ckg);
 				input_db_path = context.getString(R.string.txt_ckg_path);
 			}else if(which == 20){
 				file_name = context.getString(R.string.txt_input_cks);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_cks);
 				input_db_path = context.getString(R.string.txt_cks_path);
 			}else if(which == 21){
 				file_name = context.getString(R.string.txt_input_hebbhs);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_hebbhs);
 				input_db_path = context.getString(R.string.txt_hebbhs_path);
 			}else if(which == 22){
 				file_name = context.getString(R.string.txt_input_hebmod);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_hebmod);
 				input_db_path = context.getString(R.string.txt_hebmod_path);
 			}else if(which == 23){
 				file_name = context.getString(R.string.txt_input_hebwlc);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_hebwlc);
 				input_db_path = context.getString(R.string.txt_hebwlc_path);
 			}else if(which == 24){
 				file_name = context.getString(R.string.txt_input_indianhindi);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_indianhindi);
 				input_db_path = context.getString(R.string.txt_indianhindi_path);
 			}else if(which == 25){
 				file_name = context.getString(R.string.txt_input_indiantamil);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_indiantamil);
 				input_db_path = context.getString(R.string.txt_indiantamil_path);
 			}else if(which == 26){
 				file_name = context.getString(R.string.txt_input_jpnold);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_jpnold);
 				input_db_path = context.getString(R.string.txt_jpnold_path);
 			}else if(which == 27){
 				file_name = context.getString(R.string.txt_input_reina);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_reina);
 				input_db_path = context.getString(R.string.txt_reina_path);
 			}else if(which == 28){
 				file_name = context.getString(R.string.txt_input_tagalog);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_tagalog);
 				input_db_path = context.getString(R.string.txt_tagalog_path);
 			}else if(which == 29){
 				file_name = context.getString(R.string.txt_input_tkh);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_tkh);
 				input_db_path = context.getString(R.string.txt_tkh_path);
 			}else if(which == 30){
 				file_name = context.getString(R.string.txt_input_web);
 				dir_name = Environment.getExternalStorageDirectory().getAbsolutePath()
 						+ context.getString(R.string.path_folder);
-				get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.download_db_url));
+				get_data = context.getString(R.string.url_detail_language_db);
 				url_path = get_data + context.getString(R.string.txt_input_web);
 				input_db_path = context.getString(R.string.txt_web_path);
 			}
@@ -1915,9 +1915,9 @@ public class MainFragmentActivity extends SherlockFragmentActivity implements an
 			try{
 				String get_data;
 				if(PreferenceUtil.getIntSharedData(context, PreferenceUtil.PREF_AUDIO_SPEED, Const.AUDIO_SPEED) == 0){
-					get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.voicedata_url2));	
+					get_data = context.getString(R.string.url_detail_voicedata2);	
 				}else{
-					get_data = SimpleCrypto.decrypt(Utils.get_data, context.getString(R.string.voicedata_url));
+					get_data = context.getString(R.string.url_detail_voicedata1);
 				}
 				mediaPlayer.setOnBufferingUpdateListener(this);
 				mediaPlayer.setOnCompletionListener(this);

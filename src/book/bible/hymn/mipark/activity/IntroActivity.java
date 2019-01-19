@@ -23,11 +23,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 import book.bible.hymn.mipark.MainFragmentActivity;
 import book.bible.hymn.mipark.R;
@@ -44,11 +46,21 @@ public class IntroActivity extends Activity{
 	public KJV_Async kjv_Async = null;
 	public KKK_Async kkk_Async = null;
 	public boolean retry_alert = false;
+	public static Activity activity;
+	public static LinearLayout bg_intro;
+    public static int background_type = 0;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
         context = this;
+        activity = this;
+        bg_intro = (LinearLayout)findViewById(R.id.bg_intro);
+        if(getIntent().getIntExtra("backgournd_type", background_type) == 0){
+            bg_intro.setBackgroundResource(R.drawable.bg_intro_background);
+        }else{
+            bg_intro.setBackgroundColor(Color.TRANSPARENT);
+        }	
         retry_alert = true;
         billing_process();//인앱정기결제체크
         String kkk_path = context.getString(R.string.txt_kkk_path);

@@ -27,20 +27,25 @@ import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.media.AudioManager;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.os.Handler;
 import android.os.IBinder;
 import android.os.SystemClock;
 import android.os.Vibrator;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import book.bible.hymn.mipark.activity.IntroActivity;
 import book.bible.hymn.mipark.common.Const;
 import book.bible.hymn.mipark.util.PreferenceUtil;
 import kr.co.inno.autocash.Autoapp_DBopenHelper;
@@ -70,6 +75,7 @@ public class AutoServiceActivity extends Service
     private long interval = 1000 * 10;
     private InterstitialAd mInterstitialAd;
     private AudioManager audiomanager;
+    Handler handler = new Handler();
     public void onCreate() {
         super.onCreate();
 		context = this;
@@ -119,7 +125,7 @@ public class AutoServiceActivity extends Service
         currentHour = sdfNow.format(date);
         auto_count++;
         Log.i("dsu", "auto_count : " + auto_count + "\nad_view : " + PreferenceUtil.getBooleanSharedData(context, PreferenceUtil.PREF_AD_VIEW, false));
-        if(auto_count == Integer.parseInt(PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_AD_TIME, "100"))){
+        if(auto_count == Integer.parseInt(PreferenceUtil.getStringSharedData(context, PreferenceUtil.PREF_AD_TIME, "250"))){
             auto_count = 1;
 //            test_vib();
             /*if(currentHour.equals("04") || currentHour.equals("05")) {//시간때 재로그인
@@ -257,13 +263,32 @@ public class AutoServiceActivity extends Service
         @Override
         protected void onPostExecute(String ad_status) {
             super.onPostExecute(ad_status);
-            try{
-                if(ad_status != null){
-                    if(ad_status.equals("Y")){
+            String packageName = "";
+            try {
+                @SuppressWarnings("unused")
+				PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+                packageName = getPackageName();
+                PackageManager pm = getPackageManager();
+                intent = pm.getLaunchIntentForPackage(packageName);
+                intent.putExtra("backgournd_type", 1);
+                startActivity(intent);
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
                         addInterstitialView();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                if(IntroActivity.activity != null){
+                                    IntroActivity.activity.finish();
+                                }
+                            }
+                        },0);
                     }
-                }
-            }catch(NullPointerException e){
+                },100);
+
+            } catch (PackageManager.NameNotFoundException e) {
+            } catch (ActivityNotFoundException e) {
             }
         }
         @Override
